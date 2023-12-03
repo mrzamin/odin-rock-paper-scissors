@@ -1,6 +1,6 @@
 //Set up global variables.
 const choices = ["rock", "paper", "scissors"];
-const winners = []; //Array with any combination of "Player", "Winner", and "Tie"
+let winners = []; //Array with any combination of "Player", "Winner", and "Tie"
 
 // Randomly selects rock, paper, or scissors for the computer.
 function getComputerChoice () {
@@ -15,17 +15,16 @@ function showReset () {
     gameWinner.appendChild(resetBtn);
 }
 
-
 //Resets the game and scoreboard items to 0.
 function resetGame () {
     winners = [];
-    document.querySelector('.playerchoice').textcontent = "Player Choice: ";
-    document.querySelector('.computerchoice').textcontent = "Computer Choice: ";
-    document.querySelector('.playerscore').textcontent = "Player Score: 0";
-    document.querySelector('.computerscore').textcontent = "Computer Score: 0";
-    document.querySelector('.ties').textcontent = "Ties: 0";
-    document.querySelector('.roundwinner').textcontent = "Round Winner: ";
-    document.querySelector('.winner').textcontent = "Winner: ";
+    document.querySelector('.playerchoice').textContent = "Player Choice: ";
+    document.querySelector('.computerchoice').textContent = "Computer Choice: ";
+    document.querySelector('.playerscore').textContent = "Player Score: 0";
+    document.querySelector('.computerscore').textContent = "Computer Score: 0";
+    document.querySelector('.ties').textContent = "Ties: 0";
+    document.querySelector('.roundwinner').textContent = "Round Winner: ";
+    document.querySelector('.winner').textContent = "Winner: ";
 };
 
 //Starts the game when a selection is clicked on the UI.
